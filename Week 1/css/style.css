@@ -1,0 +1,103 @@
+body {
+	margin: 0;
+}
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	background: #19354c;
+}
+header {
+	text-align: center;
+	width: 100%;
+}
+nav {
+	margin-left: 30px;
+}
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	margin-top: .6em;
+	padding: 0;
+}
+nav ul li {
+	display: inline;
+}
+nav ul li a {
+	padding: 10px;
+	text-decoration: none;
+	color: #19354c;
+	background: #ffffff;
+}
+nav ul li a:hover {
+	padding: 10px;
+	text-decoration: none;
+	color: #ffffff;
+	background: #000000;
+}
+#nav-form {
+	float: right;
+	color: #ffffff;
+	position: relative;
+	top: -21px;
+	left: -28px;
+}
+#login-form {
+	color: #000000;
+}
+#index-content {
+	color: #000000;
+	margin: 0 30px 10px 30px;
+	padding-left: 10px;
+	padding-bottom: 2px;
+	background: #ffffff;
+}
+#content {
+	color: #000000;
+	margin: 0 30px 10px 30px;
+	background: #ffffff;
+	text-align: center;
+}
+#registration {
+	width: 160px;
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+#login-form {
+	width: 160px;
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+#login-form p {
+	margin: 0;
+	text-align: left;
+}
+#registration p {
+	margin: 0;
+	text-align: left;
+}
+#examples ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+#examples ul li {
+	display: block;
+}
+#examples {
+	text-decoration: none;
+	padding: 5px;
+	
+}
+footer{
+	color: #ffffff;
+	text-align: center;
+}
+footer p {
+	padding-bottom: 10px;
+}
+footer a {
+	color: #ffffff;
+}

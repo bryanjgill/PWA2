@@ -29,17 +29,21 @@
 						<li><a href="projects.html">Projects</a></li>  <!--  nav unordered list item-->
 						<li><a href="register.html">Register</a></li>  <!--  nav unordered list item-->
 						<li><a href="login.html">Login</a></li>  <!--  nav unordered list item-->
-						<form id="nav-form">
-							Username: <input type="text" name="username">
-							Password: <input type="password" name="password">
-						</form>
 					</ul>  <!--  End nav unordered list-->
 				</nav>  <!--  End nav-->
-				
-			<div id="index-content">
-				<h1>Welcome to Project Wave</h1>
-				<p>Your online project management portal.</p>
-				<p>Please register to get started or login to manage your projects.</p>
+			<div id="content">
+				<h1>Project Authentication</h1>
+				<p>Please enter your username and password.</p>
+					<form id="login-form">
+						<p><label>Username: </label></p>
+						<p><input type="text" name="username"></p>
+						<p><label>Password: </label></p>
+						<p><input type="password" name="password"></p>
+						<br />
+						<input id="submit" type="submit" value="SUBMIT">
+						<input id="reset" type="reset" value="RESET">
+					</form>
+					<br />
 			</div>
 			<!-- jquery -->
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>  <!--  Call Google api jquery.min.js script file-->
