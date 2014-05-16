@@ -29,18 +29,52 @@
 						<li><a href="projects.html">Projects</a></li>  <!--  nav unordered list item-->
 						<li><a href="register.html">Register</a></li>  <!--  nav unordered list item-->
 						<li><a href="login.html">Login</a></li>  <!--  nav unordered list item-->
-						<form id="nav-form">
-							Username: <input type="text" name="username">
-							Password: <input type="password" name="password">
-						</form>
+						<div id="welcome-logout">
+							<div class="userid">Welcome: [USERNAME] <button class="dashboard">Dashboard</button> <button name="logout" type="button" id="logout" value="Sign Out" >Logout</button></div>
+						</div>
 					</ul>  <!--  End nav unordered list-->
 				</nav>  <!--  End nav-->
 				
 			<div id="content">
-				<p>test</p>
+				<p><a href="#" class="modalClick">Add a Project</a></p>
+				<div id="overlay">
+					<div id="modal">
+						<span class="close">x</span>
+						<h3 class="header">Add Project</h3>
+						<div id="add">
+							<form id="addForm">
+								<label>Project name: </label>
+									<input class="masterTooltip" title="Project name" name="projectName" type="text" id="ProjectName"  /><br />
+								<label>Project description: </label>
+									<input class="masterTooltip" title="Project description" name="projectDescription" type="text" id="projectDescription" /><br />
+								<label>Project due date: </label>
+									<input class="masterTooltip" title="Project due date" name="projectDueDate" type="text" id="projectDueDate" /><br />
+								<label>Select status: </label>
+								<br />
+								<label class="myStatus">
+									<input type="radio" name="status" id="urgent"> <img class="masterTooltip" title="Urgent" src="images/buttons/b1.png" width="70" height="70">
+								</label>
+								<label class="myStatus">
+									<input type="radio" name="status" id="normal"> <img class="masterTooltip" title="Normal" src="images/buttons/b2.png" width="70" height="70">
+								</label>
+								<label class="myStatus">
+									<input type="radio" name="status" id="delayed"> <img class="masterTooltip" title="Delayed" src="images/buttons/b3.png" width="70" height="70">
+								</label>
+								<label class="myStatus">
+									<input type="radio" name="status" id="complete"> <img class="masterTooltip" title="Complete" src="images/buttons/b4.png" width="70" height="70">
+								</label>
+								<br />
+								<input class="masterTooltip" title="Add project" name="addButton" type="button" id="addButton" value="Add" />
+							</form>
+						</div>
+					</div>
+				</div>
+				
+				
 			</div>
 			<!-- jquery -->
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>  <!--  Call Google api jquery.min.js script file-->
+			<script type="text/javascript" src="js/handlebars-v1.3.0.js"></script>
 			<!-- plugins -->
 			<!-- main -->
 			<script type="text/javascript" src="js/main.js"></script>  <!--  Call main.js script file-->

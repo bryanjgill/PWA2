@@ -41,6 +41,14 @@ nav ul li a:hover {
 	top: -21px;
 	left: -28px;
 }
+#welcome-logout {
+	float: right;
+	color: #ffffff;
+	position: relative;
+	top: -2px;
+	left: -28px;
+}
+
 #login-form {
 	color: #000000;
 }
@@ -89,7 +97,63 @@ nav ul li a:hover {
 #examples {
 	text-decoration: none;
 	padding: 5px;
-	
+}
+#modal {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -200px;
+	z-index: 1001;
+	display: none;
+}
+#modal .header {
+	background: #000000;
+	color: #ffffff;
+	padding: 10px;
+}
+#modal p {
+	margin: 15px;
+}
+#modal .close {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 5px 10px;
+	border: 1px solid #000000;
+	cursor: pointer;
+	background-color: #ffffff;
+}
+.tooltip {
+	display: none;
+	position: absolute;
+	border: 1px solid #000000;
+	background-color: #000000;
+	padding: 10px;
+	color: #ffffff;
+	font-size: .8em Arial;
+}
+.mytabs {
+	width: 930px;
+	background-color: #ffffff;
+	padding: 10px;
+}
+.tabs li {
+	list-style: none;
+	display: inline;
+}
+.tabs a {
+	padding: 5px 10px;
+	display: inline-block;
+	background: #000000;
+	color: #ffffff;
+	text-decoration: none;
+}
+.tabs a.active {
+	background: #ffffff;
+	color: #000000;
 }
 footer{
 	color: #ffffff;

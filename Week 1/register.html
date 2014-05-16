@@ -29,10 +29,6 @@
 						<li><a href="projects.html">Projects</a></li>  <!--  nav unordered list item-->
 						<li><a href="register.html">Register</a></li>  <!--  nav unordered list item-->
 						<li><a href="login.html">Login</a></li>  <!--  nav unordered list item-->
-						<form id="nav-form">
-							Username: <input type="text" name="username">
-							Password: <input type="password" name="password">
-						</form>
 					</ul>  <!--  End nav unordered list-->
 				</nav>  <!--  End nav-->
 			<div id="content">
@@ -40,17 +36,19 @@
 				<p>Please fill out the for below to register.</p>
 					<form id="registration">
 						<p><label>First Name: </label></p>
-						<p><input type="text" name="firstname"></p>
+						<p><input class="masterTooltip" title="Please enter your first name" type="text" name="firstname"></p>
 						<p><label>Last Name: </label></p>
-						<p><input type="text" name="lastname"></p>
+						<p><input class="masterTooltip" title="Please enter your last name" type="text" name="lastname"></p>
+						<p><label>Email Address: </label></p>
+						<p><input class="masterTooltip" title="Please enter your email address" type="text" name="email"></p>
 						<p><label>Company: </label></p>
-						<p><input type="text" name="company"></p>
+						<p><input class="masterTooltip" title="Please enter your company name" type="text" name="company"></p>
 						<p><label>Password: </label></p>
-						<p><input type="password" name="password"></p>
+						<p><input class="masterTooltip" title="Please enter your password" type="password" name="password"></p>
 						<p><label>Verify Password: </label></p>
-						<p><input type="password" name="password-verify"></p>
+						<p><input class="masterTooltip" title="Please enter your password again" type="password" name="password-verify"></p>
 						<p><label>Newsletter Opt-in:</label></p>
-						<select name="newsletter"></p>
+						<select class="masterTooltip" title="Would you like to receive our newsletter?" name="newsletter"></p>
 							<option>Please choose</option>
 							<option value="yes">Yes</option>
 							<option value="no">No</option>

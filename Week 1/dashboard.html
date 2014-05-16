@@ -25,22 +25,42 @@
 				<nav>  <!--  Begin nav-->
 					<ul>  <!--  Begin nav unordered list-->
 						<li><a href="index.html">Home</a></li>  <!--  nav unordered list item-->
-						<li><a href="clients.html">Clients</a></li>  <!--  nav unordered list item-->
+						<li><a href="about.html">About</a></li>  <!--  nav unordered list item-->
 						<li><a href="projects.html">Projects</a></li>  <!--  nav unordered list item-->
 						<li><a href="register.html">Register</a></li>  <!--  nav unordered list item-->
 						<li><a href="login.html">Login</a></li>  <!--  nav unordered list item-->
-						<form id="nav-form">
-							Username: <input type="text" name="username">
-							Password: <input type="password" name="password">
-						</form>
+						<div id="welcome-logout">
+							<div class="userid">Welcome: [USERNAME] <button class="dashboard">Dashboard</button> <button name="logout" type="button" id="logout" value="Sign Out" >Logout</button></div>
+						</div>
 					</ul>  <!--  End nav unordered list-->
 				</nav>  <!--  End nav-->
 				
 			<div id="content">
-				<p>test</p>
+				
+				<div class="mytabs">
+					<ul class="tabs">
+						<li><a href="#tab1">Projects</a></li>
+						<li><a href="#tab2">Tasks</a></li>
+						<li><a href="#tab3">Users</a></li>
+					</ul>
+					<div id="tab1">
+						<p>This is tab #1.</p>
+						<p>Go to my projects... <button class="projectsbtn">Projects</button></p>
+					</div>
+					<div id="tab2">
+						<p>This is tab #2.</p>
+						<p>Go to my tasks... <button class="projectsbtn">Tasks</button></p>
+					</div>
+					<div id="tab3">
+						<p>This is tab #3.</p>
+						<p>Go to my users... <button class="projectsbtn">Users</button></p>
+					</div>
+				</div>
+				
 			</div>
 			<!-- jquery -->
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>  <!--  Call Google api jquery.min.js script file-->
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  <!--  Call Google api jquery.min.js script file-->
+			<script type="text/javascript" src="js/handlebars-v1.3.0.js"></script>
 			<!-- plugins -->
 			<!-- main -->
 			<script type="text/javascript" src="js/main.js"></script>  <!--  Call main.js script file-->
