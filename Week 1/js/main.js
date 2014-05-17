@@ -81,35 +81,53 @@
 	===============================================
 	Date Picker
 	*/
-	$( "#projectDueDate" ).datepicker({
+	/* $( "#projectDueDate" ).datepicker({
 		showOn: "button",
 		buttonImage: "images/buttons/cal.jpg",
 		buttonImageOnly: true
-	});
+	}); */
 	/*
 	===============================================
 	Status
 	*/
-	$( "#selectable" ).selectable();
-	$( "#projectStatus" ).buttonset();
-/*
+	/* $( "#selectable" ).selectable();
+	$( "#projectStatus" ).buttonset(); */
+	/*
 	===============================================
 	Template for Project ID Name
 	*/	
-	$(function() {
+	/* $(function() {
 		$( "#sortable" ).sortable();
 		$( "#sortable" ).disableSelection();
-	})
+	}) */
 	/*
 	===============================================
 	Modal
 	*/
 	$('.modalClick').on('click', function(event) {
 		event.preventDefault();
-		$('overlay')
+		$('#overlay')
 			.fadeIn()
-			.find('modal')
-			.fadeOut();
+			.find('#modal')
+			.fadeIn();
+	});
+	$('.close').on('click', function(event) {
+		event.preventDefault();
+		$('#overlay')
+		.fadeOut()
+		.find('#modal')
+		.fadeOut();
+	});
+	/*
+	/*
+	===============================================
+	Button Hover Effect
+	*/
+	$('.myStatus').mouseover(function() {
+		$(this).fadeTo(100, 0.3);
+	});
+	$('.myStatus').mouseout(function() {
+		$(this).fadeTo(100, 1);
 	});
 	/*
 	===============================================
