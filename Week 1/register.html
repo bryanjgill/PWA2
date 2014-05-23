@@ -25,9 +25,6 @@
 				<nav>  <!--  Begin nav-->
 					<ul>  <!--  Begin nav unordered list-->
 						<li><a href="index.html">Home</a></li>  <!--  nav unordered list item-->
-						<li><a href="users.html">Users</a></li>  <!--  nav unordered list item-->
-						<li><a href="projects.html">Projects</a></li>  <!--  nav unordered list item-->
-						<li><a href="tasks.html">Tasks</a></li>  <!--  nav unordered list item-->
 						<li><a class="current-nav" href="register.html">Register</a></li>  <!--  nav unordered list item-->
 						<li><a href="login.html">Login</a></li>  <!--  nav unordered list item-->
 					</ul>  <!--  End nav unordered list-->
@@ -37,28 +34,23 @@
 				<p>Please fill out the for below to register.</p>
 					<form id="registration">
 						<p><label>First Name: </label></p>
-						<p><input class="masterTooltip" title="Please enter your first name" type="text" name="firstname"></p>
+						<p><input class="masterTooltip" title="Please enter your first name" type="text" name="firstname" id="firstname"></p>
 						<p><label>Last Name: </label></p>
-						<p><input class="masterTooltip" title="Please enter your last name" type="text" name="lastname"></p>
+						<p><input class="masterTooltip" title="Please enter your last name" type="text" name="lastname" id="lastname"></p>
+						<p><label>Username: </label></p>
+						<p><input class="masterTooltip" title="Please enter your username" type="text" name="username" id="username"></p>
 						<p><label>Email Address: </label></p>
-						<p><input class="masterTooltip" title="Please enter your email address" type="text" name="email"></p>
-						<p><label>Company: </label></p>
-						<p><input class="masterTooltip" title="Please enter your company name" type="text" name="company"></p>
+						<p><input class="masterTooltip" title="Please enter your email address" type="text" name="email" id="email"></p>
+						<p><label>Verify Email: </label></p>
+						<p><input class="masterTooltip" title="Please confirm your email address" type="text" name="confirm-email" id="confirm-email"></p>
 						<p><label>Password: </label></p>
-						<p><input class="masterTooltip" title="Please enter your password" type="password" name="password"></p>
+						<p><input class="masterTooltip" title="Please enter your password" type="password" name="password"id="password"></p>
 						<p><label>Verify Password: </label></p>
-						<p><input class="masterTooltip" title="Please enter your password again" type="password" name="password-verify"></p>
-						<p><label>Newsletter Opt-in:</label></p>
-						<select class="masterTooltip" title="Would you like to receive our newsletter?" name="newsletter"></p>
-							<option>Please choose</option>
-							<option value="yes">Yes</option>
-							<option value="no">No</option>
-						</select>
+						<p><input class="masterTooltip" title="Please confirm your password" type="password" name="password-verify" id="confirm-password"></p>
 						<br />
 						<br />
 						<p></p>
-						<input id="submit" type="submit" value="SUBMIT">
-						<input id="reset" type="reset" value="RESET">
+						<input id="register" type="button" value="SUBMIT">
 					</form>
 			</div>
 			<!-- jquery -->

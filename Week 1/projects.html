@@ -14,7 +14,7 @@
 		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- CSS concatenated and minified via ant build script-->
-		<link rel="stylesheet" href="css/style.css?v=1">
+ 		<link rel="stylesheet" href="css/style.css?v=1">
 		<!-- end CSS-->
 	</head>  <!--  End head-->
 	<div id="wrapper">  <!--  Begin wrapper-->
@@ -25,9 +25,6 @@
 				<nav>  <!--  Begin nav-->
 					<ul>  <!--  Begin nav unordered list-->
 						<li><a href="index.html">Home</a></li>  <!--  nav unordered list item-->
-						<li><a href="users.html">Users</a></li>  <!--  nav unordered list item-->
-						<li><a class="current-nav" href="projects.html">Projects</a></li>  <!--  nav unordered list item-->
-						<li><a href="tasks.html">Tasks</a></li>  <!--  nav unordered list item-->
 						<li><a href="register.html">Register</a></li>  <!--  nav unordered list item-->
 						<li><a href="login.html">Login</a></li>  <!--  nav unordered list item-->
 						<div id="welcome-logout">
@@ -43,23 +40,22 @@
 				</div>
 				<div id="projectlist">
 					<h1>Projects</h1>
-					<div class="projects">
-						
-					</div>
 				</div>
 				<div id="overlay">
 					<div id="modal">
-						<span class="close">x</span>
+						<span class="close">X</span>
 						<h3 class="header">Add Project</h3>
 						<div id="add">
 							<form id="addForm">
 								<label>Project name: </label>
-									<input class="masterTooltip" title="Project name" name="projectName" type="text" id="ProjectName"  /><br />
+									<input class="masterTooltip" title="Project name" name="projectName" type="text" id="projectName"  /><br />
 								<label>Project description: </label>
 									<input class="masterTooltip" title="Project description" name="projectDescription" type="text" id="projectDescription" /><br />
 								<label>Project due date: </label>
 									<input class="masterTooltip" title="Project due date" name="projectDueDate" type="text" id="projectDueDate" /><br />
-								<label>Select status: </label>
+									<label>Project status: </label>
+									<input class="masterTooltip" title="Project status" name="projectStatus" type="text" id="projectStatus" /><br />
+								<!-- <label>Select status: </label>
 								<br />
 								<label class="myStatus">
 									<input type="radio" name="status" id="urgent"> <img class="masterTooltip" title="Urgent" src="images/buttons/b1.png" width="70" height="70">
@@ -72,13 +68,15 @@
 								</label>
 								<label class="myStatus">
 									<input type="radio" name="status" id="complete"> <img class="masterTooltip" title="Complete" src="images/buttons/b4.png" width="70" height="70">
-								</label>
+								</label> -->
 								<br />
 								<input class="masterTooltip" title="Add project" name="addButton" type="button" id="addButton" value="Add" />
 							</form>
 						</div>
 					</div>
 				</div>
+			<div class="projects">
+			</div>
 			</div>
 			<!-- jquery -->
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>  <!--  Call Google api jquery.min.js script file-->

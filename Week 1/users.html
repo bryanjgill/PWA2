@@ -25,16 +25,11 @@
 				<nav>  <!--  Begin nav-->
 					<ul>  <!--  Begin nav unordered list-->
 						<li><a href="index.html">Home</a></li>  <!--  nav unordered list item-->
-						<li><a class="current-nav" href="users.html">Users</a></li>  <!--  nav unordered list item-->
-						<li><a href="projects.html">Projects</a></li>  <!--  nav unordered list item-->
-						<li><a href="tasks.html">Tasks</a></li>  <!--  nav unordered list item-->
 						<li><a href="register.html">Register</a></li>  <!--  nav unordered list item-->
 						<li><a href="login.html">Login</a></li>  <!--  nav unordered list item-->
-						<form id="nav-form">
-							Username: <input class="masterTooltip" title="Please enter your username" type="text" name="username">
-							Password: <input class="masterTooltip" title="Please enter your password" type="password" name="password">
-							<button OnClick="location.href='login.html' ">Login</button>
-						</form>
+						<div id="welcome-logout">
+							<div class="userid">Welcome: [USERNAME] <button OnClick="location.href='dashboard.html' ">Dashboard</button> <input name="logOut" type="button" id="logOut" value="Logout" ></input></div>
+						</div>
 					</ul>  <!--  End nav unordered list-->
 				</nav>  <!--  End nav-->
 			<div id="content">
