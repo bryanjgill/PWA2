@@ -1,0 +1,55 @@
+<!DOCTYPE html>  
+	<!-- This is the main index of the application
+	All your script tags should be at the bottom of this file
+	The only html element in the body is the container div
+	Your code should load your page templates into the container -->
+
+<html lang="en">
+	<head>  <!--  Begin head --></!-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Project Wave</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- CSS concatenated and minified via ant build script-->
+		<link rel="stylesheet" href="css/style.css?v=1">
+		<!-- end CSS-->
+	</head>  <!--  End head-->
+	<div id="wrapper">  <!--  Begin wrapper-->
+		<body>  <!--  Begin body-->
+			<header>  <!--  Begin header-->
+				<img id="logo" src="images/logo/logo2.png" title="Logo" alt="logo" width="900px"></img>  <!--  logo image-->
+			</header>  <!--  End header-->
+				<nav>  <!--  Begin nav-->
+					<ul>  <!--  Begin nav unordered list-->
+						<li><a href="index.html">Home</a></li>  <!--  nav unordered list item-->
+						<li><a href="register.html">Register</a></li>  <!--  nav unordered list item-->
+						<li><a class="current-nav" href="login.html">Login</a></li>  <!--  nav unordered list item-->
+					</ul>  <!--  End nav unordered list-->
+				</nav>  <!--  End nav-->
+			<div id="content">
+				<h1>Project Authentication</h1>
+				<p>Please enter your username and password.</p>
+					<form id="login-form">
+						<p><label>Username: </label></p>
+						<p><input class="masterTooltip" title="Please enter your username" type="text" name="signinButton" id="user"></p>
+						<p><label>Password: </label></p>
+						<p><input class="masterTooltip" title="Please enter your password" type="password" name="signinButton" id="pass"></p>
+						<br />
+						<button name="signinButton" type="button" value="Login" id="signinButton">Login</button>
+					</form>
+					<br />
+			</div>
+			<!-- jquery -->
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>  <!--  Call Google api jquery.min.js script file-->
+			<!-- plugins -->
+			<!-- main -->
+			<script type="text/javascript" src="js/main.js"></script>  <!--  Call main.js script file-->
+			<footer>
+				<p>2014 &copy; Copyright | Project Wave | <a href="terms.html">Terms of Use</a> | <a href="privacy.html">Privacy Policy</a></p>
+			</footer>
+		</body>  <!--  End Body-->
+	</div>	<!--  End wrapper-->
+</html>  <!--  End html-->
