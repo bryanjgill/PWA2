@@ -14,7 +14,7 @@
 		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- CSS concatenated and minified via ant build script-->
-		<link rel="stylesheet" href="css/style.css?v=1">
+ 		<link rel="stylesheet" href="css/style.css?v=1">
 		<!-- end CSS-->
 	</head>  <!--  End head-->
 	<div id="wrapper">  <!--  Begin wrapper-->
@@ -28,17 +28,58 @@
 						<li><a href="register.html">Register</a></li>  <!--  nav unordered list item-->
 						<li><a href="login.html">Login</a></li>  <!--  nav unordered list item-->
 						<div id="welcome-logout">
-							<div class="userid">Welcome: [USERNAME] <button OnClick="location.href='dashboard.html' ">Dashboard</button> <input name="logOut" type="button" id="logOut" value="Logout" ></input></div>
+							<div class="userid"></div>
 						</div>
 					</ul>  <!--  End nav unordered list-->
 				</nav>  <!--  End nav-->
-				
 			<div id="content">
-				<br />
-				<h1>Tasks</h1>
+				<div class="welcome">
+					<div><a href="#" class="modalClick"><button>Add a Task</button></a><button class="dashboard">Dashboard</button><input name="logOut" type="button" id="logOut" value="Logout" ></input></div>
+				</div>
+				<div id="tasklist">
+					<h1>Tasks</h1>
+				</div>
+				<div class="tasks">
+				</div>
+				<div id="overlay">
+					<div id="modal">
+						<span class="close">X</span>
+						<h3 class="header">Add a Task</h3>
+						<div id="add">
+							<form id="addForm">
+								<label>Task name: </label>
+									<input class="masterTooltip" title="Task name" name="taskName" type="text" id="taskName"  /><br />
+								<label>Task description: </label>
+									<input class="masterTooltip" title="Task description" name="taskDescription" type="text" id="taskDescription" /><br />
+								<label>Task due date: </label>
+									<input class="masterTooltip" title="Task due date" name="taskDueDate" type="text" id="taskDueDate" /><br />
+									<label>Task status: </label>
+									<input class="masterTooltip" title="Task status" name="taskStatus" type="text" id="taskStatus" /><br />
+								<!-- <label>Select status: </label>
+								<br />
+								<label class="myStatus">
+									<input type="radio" name="status" id="urgent"> <img class="masterTooltip" title="Urgent" src="images/buttons/b1.png" width="70" height="70">
+								</label>
+								<label class="myStatus">
+									<input type="radio" name="status" id="normal"> <img class="masterTooltip" title="Normal" src="images/buttons/b2.png" width="70" height="70">
+								</label>
+								<label class="myStatus">
+									<input type="radio" name="status" id="delayed"> <img class="masterTooltip" title="Delayed" src="images/buttons/b3.png" width="70" height="70">
+								</label>
+								<label class="myStatus">
+									<input type="radio" name="status" id="complete"> <img class="masterTooltip" title="Complete" src="images/buttons/b4.png" width="70" height="70">
+								</label> -->
+								<br />
+								<input class="masterTooltip" title="Add task" name="addButton" type="button" id="addButton" value="Add" />
+							</form>
+						</div>
+					</div>
+				</div>
+				
 			</div>
 			<!-- jquery -->
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>  <!--  Call Google api jquery.min.js script file-->
+			<script type="text/javascript" src="js/handlebars-v1.3.0.js"></script>
 			<!-- plugins -->
 			<!-- main -->
 			<script type="text/javascript" src="js/main.js"></script>  <!--  Call main.js script file-->
