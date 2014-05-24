@@ -24,21 +24,34 @@
 			</header>  <!--  End header-->
 				<nav>  <!--  Begin nav-->
 					<ul>  <!--  Begin nav unordered list-->
-						<li><a class="current-nav" href="index.html">Home</a></li>  <!--  nav unordered list item-->
-						<li><a href="register.html">Register</a></li>  <!--  nav unordered list item-->
+						<li><a href="index.html">Home</a></li>  <!--  nav unordered list item-->
+						<li><a class="current-nav" href="register.html">Register</a></li>  <!--  nav unordered list item-->
 						<li><a href="login.html">Login</a></li>  <!--  nav unordered list item-->
-						<form id="nav-form">
-							<label>Username: </label><input class="masterTooltip" title="Please enter your username" type="text" name="signinButton" id="user">
-							<label>Password: </label><input class="masterTooltip" title="Please enter your password" type="password" name="signinButton" id="pass">
-							<button name="signinButton" type="button" value="Login" id="signinButton">Login</button>
-						</form>
 					</ul>  <!--  End nav unordered list-->
 				</nav>  <!--  End nav-->
-				
-			<div id="index-content">
-				<h1>Welcome to Project Wave</h1>
-				<p>Your online project management portal.</p>
-				<p>Please register to get started or login to manage your projects.</p>
+			<div id="content">
+				<h1>Registration Form</h1>
+				<p>Please fill out the for below to register.</p>
+					<form id="registration">
+						<p><label>First Name: </label></p>
+						<p><input class="masterTooltip" title="Please enter your first name" type="text" name="firstname" id="firstname"></p>
+						<p><label>Last Name: </label></p>
+						<p><input class="masterTooltip" title="Please enter your last name" type="text" name="lastname" id="lastname"></p>
+						<p><label>Username: </label></p>
+						<p><input class="masterTooltip" title="Please enter your username" type="text" name="username" id="username"></p>
+						<p><label>Email Address: </label></p>
+						<p><input class="masterTooltip" title="Please enter your email address" type="text" name="email" id="email"></p>
+						<p><label>Verify Email: </label></p>
+						<p><input class="masterTooltip" title="Please confirm your email address" type="text" name="confirm-email" id="confirm-email"></p>
+						<p><label>Password: </label></p>
+						<p><input class="masterTooltip" title="Please enter your password" type="password" name="password"id="password"></p>
+						<p><label>Verify Password: </label></p>
+						<p><input class="masterTooltip" title="Please confirm your password" type="password" name="password-verify" id="confirm-password"></p>
+						<br />
+						<br />
+						<p></p>
+						<input id="register" type="button" value="SUBMIT">
+					</form>
 			</div>
 			<!-- jquery -->
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>  <!--  Call Google api jquery.min.js script file-->

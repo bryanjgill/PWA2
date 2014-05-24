@@ -24,24 +24,41 @@
 			</header>  <!--  End header-->
 				<nav>  <!--  Begin nav-->
 					<ul>  <!--  Begin nav unordered list-->
-						<li><a class="current-nav" href="index.html">Home</a></li>  <!--  nav unordered list item-->
+						<li><a href="index.html">Home</a></li>  <!--  nav unordered list item-->
 						<li><a href="register.html">Register</a></li>  <!--  nav unordered list item-->
 						<li><a href="login.html">Login</a></li>  <!--  nav unordered list item-->
-						<form id="nav-form">
-							<label>Username: </label><input class="masterTooltip" title="Please enter your username" type="text" name="signinButton" id="user">
-							<label>Password: </label><input class="masterTooltip" title="Please enter your password" type="password" name="signinButton" id="pass">
-							<button name="signinButton" type="button" value="Login" id="signinButton">Login</button>
-						</form>
+						<div id="welcome-logout">
+							<div class="userid"></div>
+						</div>
 					</ul>  <!--  End nav unordered list-->
 				</nav>  <!--  End nav-->
 				
-			<div id="index-content">
-				<h1>Welcome to Project Wave</h1>
-				<p>Your online project management portal.</p>
-				<p>Please register to get started or login to manage your projects.</p>
+			<div id="content">
+				<div><button OnClick="location.href='dashboard.html' ">Dashboard</button> <input name="logOut" type="button" id="logOut" value="Logout" ></input></div>
+				<div class="mytabs">
+					<ul class="tabs">
+						<li><a href="#tab1">Projects</a></li>
+						<li><a href="#tab2">Tasks</a></li>
+						<li><a href="#tab3">Users</a></li>
+					</ul>
+					<div id="tab1">
+						<p>Access all projects</p>
+						<p>Go to projects... <button class="projectsbtn">Projects</button></p>
+					</div>
+					<div id="tab2">
+						<p>Access all tasks</p>
+						<p>Go to tasks... <button class="tasks">Tasks</button></p>
+					</div>
+					<div id="tab3">
+						<p>Access all users</p>
+						<p>Go to users... <button class="users">Users</button></p>
+					</div>
+				</div>
+				
 			</div>
 			<!-- jquery -->
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>  <!--  Call Google api jquery.min.js script file-->
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  <!--  Call Google api jquery.min.js script file-->
+			<script type="text/javascript" src="js/handlebars-v1.3.0.js"></script>
 			<!-- plugins -->
 			<!-- main -->
 			<script type="text/javascript" src="js/main.js"></script>  <!--  Call main.js script file-->

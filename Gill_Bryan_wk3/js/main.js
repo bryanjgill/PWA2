@@ -71,10 +71,20 @@
 				}
 		});
 	});
+	
+	/*
+	===============================================
+	Display Username
+	*/
+	$.getJSON("xhr/check_login.php", function (data){
+		$.each(data, function(key, val){
+			$(".userid").html("Welcome: " + val.first_name);
+		})
+	});
 	/*
 	===============================================
 	Logout
-	*/
+	*/	
 	$('#logOut').click(function(e){
 		e.preventDefault;
 		$.get('xhr/logout.php', function(){
@@ -133,7 +143,7 @@
 	*/
 	$('.dashboard').on('click', function(e){
 		e.preventDefault();
-		window.location.assign('admin.html');
+		window.location.assign('dashboard.html');
 	});
 	/*
 	===============================================
@@ -189,52 +199,121 @@
 			}
 		});
 	});
+		/*
+	===============================================
+	New Tasks
+	*/
+	$('#addButton').on('click', function (e){
+		e.preventDefault();
+		var	taskName = $('#taskName').val(),
+				taskDesc = $('#taskDescription').val(),
+				taskDue = $('#taskDueDate').val(),
+				status = $('#taskStatus').val();
+		
+		$.ajax({
+			url: "xhr/new_task.php",
+			type: 'post',
+			dataType: 'json',
+			data: {
+				taskName: taskName,
+				taskDescription: taskDesc,
+				dueDate: taskDue,
+				status: status
+			},
+			success: function(response) {
+				if(response.error) {
+					alert(response.error);
+				} else {
+					window.location.assign("tasks.html");
+				};
+			}
+		});
+	});
 	/*
 	===============================================
 	Get Projects
 	*/
-var projects = function () {
-	$.ajax({
-		url: 'xhr/get_projects.php',
-		type: 'get',
-		dataType: 'json',
-		success: function (response) {
-			if (response.error){
-				console.log(response.error);
-		} else {
-			for(var i=0, j=response.projects.length; i < j; i++){
-				var result = response.projects[i];
-				$(".projects").append(
-					'<div stype="border: 1px solid black">' +
-					" Project ID: " + result.id + "<br>" +
-					" Project Name: " + result.projectName + "<br>" +
-					" Project Description: " + result.projectDescription + "<br>"
-					+ '<button class="deletebtn">Delete</button>'
-					+ '</div> <br>'
-				);
-			};
-			$('.deletebtn').on('click', function (e) {
-				console.log('test delete');
-				$.ajax({
-					url: 'xhr/delete_project.php',
-					data: {
-						projectID: resultID
-					},
-					type: 'post',
-					dataType: 'json',
-					success: function (response){
-						if (response.error) {
-							alert(response.error);
-						} else {
-							window.location.assign("projects.html");
-						};
-					}
+	var projects = function () {
+		$.ajax({
+			url: 'xhr/get_projects.php',
+			type: 'get',
+			dataType: 'json',
+			success: function (response) {
+				if (response.error){
+					console.log(response);
+			} else {
+				for(var i=0, j=response.projects.length; i < j; i++){
+					var result = response.projects[i];
+					$(".projects").append(
+						'<div style="border: 1px solid black; text-align: left;">' + " Project ID: " + result.id + "<br>" + " Project Name: " + result.projectName + "<br>" + " Project Description: " + result.projectDescription + "<br>" + " Project Status: " + result.status + "<br>" + '<button class="deletebtn">Delete</button>' + '</div> <br>'
+					);
+				};
+				$('.deletebtn').on('click', function (e) {
+					console.log('test delete');
+					$.ajax({
+						url: 'xhr/delete_project.php',
+						data: {
+							projectID: result.id
+						},
+						type: 'post',
+						dataType: 'json',
+						success: function (response){
+							if (response.error) {
+								alert(response.error);
+							} else {
+								window.location.assign("projects.html");
+							};
+						}
+					});
 				});
-			});
-		};
-		}
-	});
-};	/*
+			}
+			}
+		})
+	}
+	projects();
+	/*
+	===============================================
+	Get Tasks
+	*/
+	var tasks = function () {
+		$.ajax({
+			url: 'xhr/get_tasks.php',
+			type: 'get',
+			dataType: 'json',
+			success: function (response) {
+				if (response.error){
+					console.log(response);
+			} else {
+				for(var i=0, j=response.tasks.length; i < j; i++){
+					var result = response.tasks[i];
+					$(".tasks").append(
+						'<div style="border: 1px solid black; text-align: left;">' + " Task ID: " + result.id + "<br>" + " Task Name: " + result.taskName + "<br>" + " Task Description: " + result.taskDescription + "<br>" + " Task Status: " + result.status + "<br>" + '<button class="deletebtn">Delete</button>' + '</div> <br>'
+					);
+				};
+				$('.deletebtn').on('click', function (e) {
+					console.log('test delete');
+					$.ajax({
+						url: 'xhr/delete_task.php',
+						data: {
+							taskID: result.id
+						},
+						type: 'post',
+						dataType: 'json',
+						success: function (response){
+							if (response.error) {
+								alert(response.error);
+							} else {
+								window.location.assign("tasks.html");
+							};
+						}
+					});
+				});
+			}
+			}
+		})
+	}
+	tasks();
+	/*
 	===============================================
 	Date Picker
 	*/
