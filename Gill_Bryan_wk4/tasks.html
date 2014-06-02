@@ -1,0 +1,94 @@
+<!DOCTYPE html>  
+	<!-- This is the main index of the application
+	All your script tags should be at the bottom of this file
+	The only html element in the body is the container div
+	Your code should load your page templates into the container -->
+
+<html lang="en">
+	<head>  <!--  Begin head --></!-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Project Wave</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- CSS concatenated and minified via ant build script-->
+ 		<link rel="stylesheet" href="css/style.css?v=1">
+		<!-- end CSS-->
+	</head>  <!--  End head-->
+	<div id="wrapper">  <!--  Begin wrapper-->
+		<body>  <!--  Begin body-->
+			<header>  <!--  Begin header-->
+				<img id="logo" src="images/logo/logo2.png" title="Logo" alt="logo" width="900px"></img>  <!--  logo image-->
+			</header>  <!--  End header-->
+				<nav>  <!--  Begin nav-->
+					<ul>  <!--  Begin nav unordered list-->
+						<li><a href="index.html">Home</a></li>  <!--  nav unordered list item-->
+						<li><a href="register.html">Register</a></li>  <!--  nav unordered list item-->
+						<li><a href="login.html">Login</a></li>  <!--  nav unordered list item-->
+						<div id="welcome-logout">
+							<div class="userid"></div>
+						</div>
+					</ul>  <!--  End nav unordered list-->
+				</nav>  <!--  End nav-->
+			<div id="content">
+				<div class="welcome">
+					<div><a href="#" class="modalClick"><button>Add a Task</button></a><button class="dashboard">Dashboard</button><input name="logOut" type="button" id="logOut" value="Logout" ></input></div>
+				</div>
+				<div id="tasklist">
+					<h1>Tasks</h1>
+				</div>
+				<div class="tasks">
+				</div>
+				<div id="overlay">
+					<div id="modal">
+						<span class="close">X</span>
+						<h3 class="header">Add a Task</h3>
+						<div id="add">
+							<form id="addForm">
+								<label>Task name: </label>
+									<input class="masterTooltip" title="Task name" name="taskName" type="text" id="taskName"  /><br />
+								<label>Task description: </label>
+									<input class="masterTooltip" title="Task description" name="taskDescription" type="text" id="taskDescription" /><br />
+								<label>Task due date: </label>
+									<input class="masterTooltip" title="Task due date" name="taskDueDate" type="text" id="taskDueDate" /><br />
+									<label>Task status: </label>
+									<input class="masterTooltip" title="Task status" name="taskStatus" type="text" id="taskStatus" /><br />
+								<!-- <label>Select status: </label>
+								<br />
+								<label class="myStatus">
+									<input type="radio" name="status" id="urgent"> <img class="masterTooltip" title="Urgent" src="images/buttons/b1.png" width="70" height="70">
+								</label>
+								<label class="myStatus">
+									<input type="radio" name="status" id="normal"> <img class="masterTooltip" title="Normal" src="images/buttons/b2.png" width="70" height="70">
+								</label>
+								<label class="myStatus">
+									<input type="radio" name="status" id="delayed"> <img class="masterTooltip" title="Delayed" src="images/buttons/b3.png" width="70" height="70">
+								</label>
+								<label class="myStatus">
+									<input type="radio" name="status" id="complete"> <img class="masterTooltip" title="Complete" src="images/buttons/b4.png" width="70" height="70">
+								</label> -->
+								<br />
+								<input class="masterTooltip" title="Add task" name="addButton" type="button" id="addButton" value="Add" />
+							</form>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!-- jquery -->
+ 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>  <!--  Call Google api jquery.min.js script file-->
+			<script type="text/javascript" src="js/handlebars-v1.3.0.js"></script>
+			<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+			<script type="text/javascript" src="js/jquery-ui-1.10.4.min.js"></script>
+			<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+			<!-- plugins -->
+			<!-- main -->
+			<script type="text/javascript" src="js/main.js"></script>  <!--  Call main.js script file-->
+			<footer>
+				<p>2014 &copy; Copyright | Project Wave | <a href="terms.html">Terms of Use</a> | <a href="privacy.html">Privacy Policy</a></p>
+			</footer>
+		</body>  <!--  End Body-->
+	</div>	<!--  End wrapper-->
+</html>  <!--  End html-->

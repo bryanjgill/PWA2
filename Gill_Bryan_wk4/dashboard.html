@@ -1,0 +1,151 @@
+<!DOCTYPE html>  
+	<!-- This is the main index of the application
+	All your script tags should be at the bottom of this file
+	The only html element in the body is the container div
+	Your code should load your page templates into the container -->
+
+<html lang="en">
+	<head>  <!--  Begin head --></!-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Project Wave</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- CSS concatenated and minified via ant build script-->
+		<link rel="stylesheet" href="css/style.css?v=1">
+		<!-- end CSS-->
+		<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+	</head>  <!--  End head-->
+	<div id="wrapper">  <!--  Begin wrapper-->
+		<body>  <!--  Begin body-->
+			<header>  <!--  Begin header-->
+				<img id="logo" src="images/logo/logo2.png" title="Logo" alt="logo" width="900px"></img>  <!--  logo image-->
+			</header>  <!--  End header-->
+				<nav>  <!--  Begin nav-->
+					<ul>  <!--  Begin nav unordered list-->
+						<li><a href="index.html">Home</a></li>  <!--  nav unordered list item-->
+						<li><a href="register.html">Register</a></li>  <!--  nav unordered list item-->
+						<li><a href="login.html">Login</a></li>  <!--  nav unordered list item-->
+						<div id="welcome-logout">
+							<div class="userid"></div>
+						</div>
+					</ul>  <!--  End nav unordered list-->
+				</nav>  <!--  End nav-->
+				
+			<div id="content">
+				<div><button OnClick="location.href='dashboard.html' ">Dashboard</button> <input name="logOut" type="button" id="logOut" value="Logout" ></input></div>
+				<div class="mytabs">
+					<ul class="tabs">
+						<li><a href="#tab1">Projects</a></li>
+						<li><a href="#tab2">Tasks</a></li>
+						<li><a href="#tab3">Users</a></li>
+						<li><a href="#tab4">Gallery</a></li>
+					</ul>
+					<div id="tab1">
+						<p>Access all projects</p>
+						<p>Go to projects... <button class="projectsbtn">Projects</button></p>
+					</div>
+					<div id="tab2">
+						<p>Access all tasks</p>
+						<p>Go to tasks... <button class="tasks">Tasks</button></p>
+					</div>
+					<div id="tab3">
+						<p>Access all users</p>
+						<p>Go to users... <button class="users">Users</button></p>
+					</div>
+					<div id="tab4">
+						
+						<div id="gallery">
+							<a href="images/aquarium/tank/tank1.jpg">
+								<span class="img">
+									<img src="images/aquarium/tank/tank1.jpg" width="200px" height="133px" alt="Tank Shot #1" title="Full tank shot #1" />
+									<h4>Full Tank Shot #1</h4>
+								</span>
+							</a>
+							<a href="images/aquarium/tank/tank2.jpg">
+								<span class="img">
+									<img src="images/aquarium/tank/tank2.jpg" width="200px" height="133px" alt="Tank Shot #1" title="Full tank shot #1" />
+									<h4>Full Tank Shot #2</h4>
+								</span>
+							</a>
+							<a href="images/aquarium/tank/tank3.jpg">
+								<span class="img">
+									<img src="images/aquarium/tank/tank3.jpg" width="200px" height="133px" alt="Tank Shot #1" title="Full tank shot #1" />
+									<h4>Full Tank Shot #3</h4>
+								</span>
+							</a>
+							<a href="images/aquarium/tank/tank4.jpg">
+								<span class="img">
+									<img src="images/aquarium/tank/tank4.jpg" width="200px" height="133px" alt="Tank Shot #1" title="Full tank shot #1" />
+									<h4>Full Tank Shot #4</h4>
+								</span>
+							</a>
+							<a href="images/aquarium/fish/fish1.jpg">
+								<span class="img">
+									<img src="images/aquarium/fish/fish1.jpg" width="200px" height="133px" alt="Tank Shot #1" title="Full tank shot #1" />
+									<h4>Bi-color Damsel</h4>
+								</span>
+							</a>
+							<a href="images/aquarium/fish/fish2.jpg">
+								<span class="img">
+									<img src="images/aquarium/fish/fish2.jpg" width="200px" height="133px" alt="Tank Shot #1" title="Full tank shot #1" />
+									<h4>Bi-color Pseudochromis</h4>
+								</span>
+							</a>
+							<a href="images/aquarium/fish/fish3.jpg">
+								<span class="img">
+									<img src="images/aquarium/fish/fish3.jpg" width="200px" height="133px" alt="Tank Shot #1" title="Full tank shot #1" />
+									<h4>Blue Damsel</h4>
+								</span>
+							</a>
+							<a href="images/aquarium/fish/fish4.jpg">
+								<span class="img">
+									<img src="images/aquarium/fish/fish4.jpg" width="200px" height="133px" alt="Tank Shot #1" title="Full tank shot #1" />
+									<h4>Six Line Wrasse</h4>
+								</span>
+							</a>
+							<a href="images/aquarium/coral/coral1.jpg">
+								<span class="img">
+									<img src="images/aquarium/coral/coral1.jpg" width="200px" height="133px" alt="Tank Shot #1" title="Full tank shot #1" />
+									<h4>Green Star Polyp</h4>
+								</span>
+							</a>
+							<a href="images/aquarium/coral/coral2.jpg">
+								<span class="img">
+									<img src="images/aquarium/coral/coral2.jpg" width="200px" height="133px" alt="Tank Shot #1" title="Full tank shot #1" />
+									<h4>Hammer Coral</h4>
+								</span>
+							</a>
+							<a href="images/aquarium/coral/coral3.jpg">
+								<span class="img">
+									<img src="images/aquarium/coral/coral3.jpg" width="200px" height="133px" alt="Tank Shot #1" title="Full tank shot #1" />
+									<h4>Zoanthid</h4>
+								</span>
+							</a>
+							<a href="images/aquarium/coral/coral4.jpg">
+								<span class="img">
+									<img src="images/aquarium/coral/coral4.jpg" width="200px" height="133px" alt="Tank Shot #1" title="Full tank shot #1" />
+									<h4>Small Zoanthid Colony</h4>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- jquery -->
+ 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>  <!--  Call Google api jquery.min.js script file-->
+			<script type="text/javascript" src="js/handlebars-v1.3.0.js"></script>
+			<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+			<script type="text/javascript" src="js/jquery-ui-1.10.4.min.js"></script>
+			<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+			<!-- plugins -->
+			<!-- main -->
+			<script type="text/javascript" src="js/main.js"></script>  <!--  Call main.js script file-->
+			<footer>
+				<p>2014 &copy; Copyright | Project Wave | <a href="terms.html">Terms of Use</a> | <a href="privacy.html">Privacy Policy</a></p>
+			</footer>
+		</body>  <!--  End Body-->
+	</div>	<!--  End wrapper-->
+</html>  <!--  End html-->
